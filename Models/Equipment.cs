@@ -1,4 +1,6 @@
-﻿namespace APBD_TASK2.Models;
+﻿using APBD_TASK2.Enum;
+
+namespace APBD_TASK2.Models;
 
 public abstract class Equipment
 {
@@ -19,8 +21,8 @@ public abstract class Equipment
         ID = _nextID++;
         Name = name;
         Description = description;
-        Status = EquipmentStatus.Avalable;
-        
+        Status = EquipmentStatus.Available;
+        AddedDate = DateTime.Now;
     }
     
     
