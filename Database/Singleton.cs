@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using APBD_TASK2.Models;
 
 namespace APBD_TASK2.Database
@@ -20,10 +16,9 @@ namespace APBD_TASK2.Database
         }
 
         private Singleton() { }
-
-        //TODO: add collections for items in the exercise
-        //public List<Class> Class { get; } = new();
         
         public List<Equipment> Equipments { get; set; } = new List<Equipment>();
+        public List<User> Users { get; set; } = new List<User>();
+        public List<Rental> Rentals { get; set; } = new List<Rental>();
     }
 }
