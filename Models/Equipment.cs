@@ -24,7 +24,4 @@ public abstract class Equipment
         Status = EquipmentStatus.Available;
         AddedDate = DateTime.Now;
     }
-    
-    
-    
 }
